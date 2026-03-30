@@ -267,5 +267,5 @@ footer {
 
 @media (max-width: 480px) {
   .catalog { grid-template-columns: 1fr; }
-  .btn-ig { display: none; }
+  .btn-ig { display: flex; }
 }
