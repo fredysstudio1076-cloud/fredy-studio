@@ -1,6 +1,6 @@
 // ── CONFIGURACIÓN ──────────────────────────────────────
 const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR5xm6Je1IaxMtNGBTM8apwuJJHdQgyJCG1qbcvuEh3JAkPbsERwdqoGJSIfMmyXIiO2QLv0egO2KRB/pub?gid=0&single=true&output=csv';
-const WA_NUMBER = '573001234567'; // ← Fredy reemplaza con su número
+const WA_NUMBER = '573151736313'; // ← Fredy reemplaza con su número
 
 // ── ESTADO GLOBAL ───────────────────────────────────────
 let allProducts = [];
