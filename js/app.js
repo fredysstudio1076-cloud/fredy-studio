@@ -117,6 +117,16 @@ async function loadCatalog() {
     console.error('Error:', error);
   }
 }
+function scrollAndFilter(category) {
+  // Activa el filtro
+  const btn = document.querySelector(`.filter-btn[onclick="filterProducts('${category}', this)"]`);
+  if (btn) {
+    filterProducts(category, btn);
+  }
+  
+  // Hace scroll suave hacia el catálogo
+  document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+}
 
 // ── ARRANCAR ────────────────────────────────────────────
 loadCatalog();

@@ -183,6 +183,10 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.hero-card {
+  cursor: pointer;
+}
+
 .product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 50px rgba(26,26,24,0.13);
