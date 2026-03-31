@@ -295,18 +295,23 @@ footer {
   .catalog { grid-template-columns: 1fr; }
   .btn-ig { display: flex; }
   
-  /* Botón de WhatsApp más compacto en móvil */
-  .buy-btn {
-    padding: 0.55rem 0.8rem;
-    font-size: 0.72rem;
-  }
-  
+  /* Modal footer responsive */
   .modal-footer {
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
   
   .modal-price {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+  }
+  
+  /* Botón de WhatsApp más compacto en móvil */
+  .modal-footer .buy-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -403,6 +408,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .modal-price {
