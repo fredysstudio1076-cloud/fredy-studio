@@ -51,7 +51,6 @@ function createCard(producto) {
   card.dataset.category = producto.categoria?.toLowerCase() || 'unisex';
 
   card.innerHTML = `
-  card.onclick = () => openModal(producto);
     <img 
     class="product-img" 
     src="${producto.imagen}" 
@@ -70,6 +69,7 @@ function createCard(producto) {
       </div>
     </div>
   `;
+  card.onclick = () => openModal(producto);
 
   return card;
 }
