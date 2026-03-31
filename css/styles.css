@@ -267,6 +267,23 @@ footer {
   .hero-container { grid-template-columns: 1fr; }
   .catalog { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   header { padding: 0 1rem; }
+  
+  /* Modal responsive */
+  .modal-content {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  
+  .modal-img {
+    width: 100%;
+    height: 300px;
+    min-height: auto;
+  }
+  
+  .modal-body {
+    width: 100%;
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -293,11 +310,13 @@ footer {
 .modal-content {
   background: var(--card-bg);
   border-radius: 20px;
-  max-width: 500px;
+  max-width: 900px;
   width: 100%;
   overflow: hidden;
   position: relative;
   animation: modalIn 0.3s ease;
+  display: flex;
+  flex-direction: row;
 }
 
 @keyframes modalIn {
@@ -324,21 +343,18 @@ footer {
 }
 
 .modal-img {
-  width: 100%;
-  height: 300px;
+  width: 50%;
+  height: 100%;
+  min-height: 500px;
   object-fit: cover;
-  cursor: zoom-in;
-}
-
-.modal-img.zoomed {
-  object-fit: cover;
-  cursor: zoom-out;
-  height: 450px;
-  transition: height 0.3s ease;
 }
 
 .modal-body {
-  padding: 1.5rem;
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal-category {
