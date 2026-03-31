@@ -51,6 +51,7 @@ function createCard(producto) {
   card.dataset.category = producto.categoria?.toLowerCase() || 'unisex';
 
   card.innerHTML = `
+  card.onclick = () => openModal(producto);
     <img 
     class="product-img" 
     src="${producto.imagen}" 
@@ -126,6 +127,25 @@ function scrollAndFilter(category) {
   
   // Hace scroll suave hacia el catálogo
   document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+}
+
+function openModal(producto) {
+  const mensaje = encodeURIComponent(`Hola! Me interesa "${producto.nombre}" 🛍️`);
+  
+  document.getElementById('modalImg').src = producto.imagen;
+  document.getElementById('modalName').textContent = producto.nombre;
+  document.getElementById('modalCategory').textContent = producto.categoria;
+  document.getElementById('modalDesc').textContent = producto.descripcion_larga || producto.descripcion;
+  document.getElementById('modalPrice').textContent = formatPrice(producto.precio) + ' COP';
+  document.getElementById('modalBtn').href = `https://wa.me/${WA_NUMBER}?text=${mensaje}`;
+  
+  document.getElementById('modalOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
+  document.body.style.overflow = '';
 }
 
 // ── ARRANCAR ────────────────────────────────────────────
