@@ -327,6 +327,14 @@ footer {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  cursor: zoom-in;
+}
+
+.modal-img.zoomed {
+  object-fit: cover;
+  cursor: zoom-out;
+  height: 450px;
+  transition: height 0.3s ease;
 }
 
 .modal-body {
