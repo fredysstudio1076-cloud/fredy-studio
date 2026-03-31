@@ -44,7 +44,7 @@ function formatPrice(valor) {
 // ── CREAR CARD ──────────────────────────────────────────
 function createCard(producto) {
   const disponible = producto.disponible?.toUpperCase() !== 'NO';
-  const mensaje = encodeURIComponent(`Hola! Me interesa "${producto.nombre}" 🛍️`);
+  const mensaje = encodeURIComponent(`Me puedes dar más información sobre "${producto.nombre}"`);
 
   const card = document.createElement('div');
   card.className = 'product-card';
@@ -130,7 +130,7 @@ function scrollAndFilter(category) {
 }
 
 function openModal(producto) {
-  const mensaje = encodeURIComponent(`Hola! Me interesa "${producto.nombre}" 🛍️`);
+  const mensaje = encodeURIComponent(`Me puedes dar más información sobre "${producto.nombre}"`);
   
   document.getElementById('modalImg').src = producto.imagen;
   document.getElementById('modalName').textContent = producto.nombre;

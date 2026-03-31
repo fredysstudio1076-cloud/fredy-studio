@@ -242,10 +242,6 @@ header {
   white-space: nowrap;
 }
 
-.buy-btn::before {
-  content: '💬 ';
-}
-
 .buy-btn:hover { background: #1fba58; }
 
 /* ESTADOS */
@@ -307,10 +303,19 @@ footer {
   }
   
   /* Botón de WhatsApp más compacto en móvil */
+  .modal-footer .buy-btn::after {
+    content: 'Pedir';
+  }
+  
   .modal-footer .buy-btn {
     width: 100%;
     text-align: center;
     padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+    font-size: 0;
+  }
+  
+  .modal-footer .buy-btn::after {
     font-size: 0.85rem;
   }
 }
