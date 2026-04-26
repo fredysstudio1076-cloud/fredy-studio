@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fredy's Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Nova Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <div class="logo">Fredy's <span>Studio</span></div>
+    <div class="logo">
+      <span class="logo-main">Nova</span>
+      <span class="logo-sub">Studio</span>
+    </div>
     <div class="header-actions">
       <a href="https://wa.me/573151736313" target="_blank" class="btn-wa">WhatsApp</a>
       <a href="https://www.instagram.com/fredys_studio" target="_blank" class="btn-ig">Instagram</a>
@@ -26,7 +29,7 @@
         <h1>Tu estilo, <br><em>tu historia.</em></h1>
         <p>Descubre nuestras nuevas prendas diseñadas para expresar tu personalidad única.</p>
       </div>
-      <div class="hero-cards" >
+      <div class="hero-cards">
         <div class="hero-card" onclick="scrollAndFilter('dama')">
           <span class="emoji">👗</span>
           <p>Dama</p>
@@ -58,8 +61,9 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 Fredy's Studio</p>
+    <p>© 2025 Nova Studio</p>
   </footer>
+
   <!-- MODAL -->
   <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
