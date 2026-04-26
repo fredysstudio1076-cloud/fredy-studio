@@ -161,7 +161,7 @@ header {
   50% { transform: translateY(-8px); }
 }
 
-/* ── FILTROS ── */
+/* ──   FILTROS ── */
 .filters {
   max-width: 1200px;
   margin: 2rem auto 0;
